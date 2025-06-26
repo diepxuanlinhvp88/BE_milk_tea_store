@@ -7,7 +7,6 @@ import jakarta.persistence.Id;
 import lombok.Data;
 
 
-
 @Entity
 @Data
 public class Category {
@@ -15,6 +14,4 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.AUTO)
     int id;
     String name;
-
-
 }

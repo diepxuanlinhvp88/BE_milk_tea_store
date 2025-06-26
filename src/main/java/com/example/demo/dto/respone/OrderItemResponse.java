@@ -1,8 +1,5 @@
 package com.example.demo.dto.respone;
 
-import com.example.demo.entity.Topping;
-import lombok.Data;
-
 import java.util.List;
 
 public record OrderItemResponse(
@@ -11,6 +8,6 @@ public record OrderItemResponse(
         String productName,
         Integer quantity,
         Double price,
-        List<Topping> toppings
+        List<ToppingResponse> toppings
 ) {
 }

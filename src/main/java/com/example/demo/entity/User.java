@@ -5,11 +5,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 
+/**
+ * Đại diện cho khách hàng
+ */
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "`user`")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

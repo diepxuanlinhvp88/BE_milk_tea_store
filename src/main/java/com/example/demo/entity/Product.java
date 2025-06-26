@@ -5,8 +5,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * Product đại diện cho 1 sản phẩm trong cửa hàng, VD: tra dao, tra sua....
+ */
 @Entity
-@Table(name = "product")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -24,7 +26,5 @@ public class Product {
     @Column(nullable = false)
     private double price;
 
-    public Product(Long id){
-        this.id = id;
-    }
+
 }
